@@ -1,4 +1,4 @@
-(ns osc-tidal-client
+(ns bb.main
   (:require
    [babashka.process :as p]
    [clojure.java.io :as io]
@@ -24,6 +24,11 @@
  (osc/osc-send client "/test" "i" val))
 
 (println "DONE3")
+
+
+(defn -main [& _args]
+  (println "hello world"))
+
 
 ;; (Thread/sleep 1000)
 
